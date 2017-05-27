@@ -10,3 +10,12 @@ Password of **SYSTEM** user.
 
 ### HEALTHCHECK_TABLE
 Table to be checked in health check.
+
+### healthcheck.sh
+
+This script run SQL:
+select count(*) from ALL_TABLES where TABLE_NAME = '${HEALTHCHECK_TABLE}'
+
+### More information
+This repository extends [wnameless/oracle-xe-11g](https://hub.docker.com/r/wnameless/oracle-xe-11g/).
+For more information see wnameless/oracle-xe-11g documentation.
